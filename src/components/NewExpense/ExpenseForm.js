@@ -22,12 +22,10 @@ function ExpenseForm(props) {
       date: new Date(enteredDate),
     };
 
-    // console.log(expense);
-    props.onAddingExpense(expense);
+    props.onSaveExpenseDate(expense);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
-    // console.log(expense);
   };
 
   return (
